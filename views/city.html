@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ITU CSC 520 Python Programming Team Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#607D8B">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link rel="stylesheet" href="../static/ie10-viewport-bug-workaround.css">
+  <!-- Custom styles for fixed-top template -->
+  <link rel="stylesheet" href="../static/navbar-fixed-top.css">
+  <!-- main CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <link rel="stylesheet" href="../static/simple-sidebar.css">
+</head>
+
+<body>
+<div class="container-fluid">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">InNAround</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="jumbotron">
+      
+      
+      <h3>
+        Welcome to {{city}}...
+      </h3>
+      
+      <div class="row">
+        <div id="left-sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <ul class="sidebar-nav" action="/interest" method="POST">
+            <li class="sidebar-brand">
+              <a href="#">
+                InNAround
+              </a>
+            </li>
+            <li>
+              <a id="place" name="place" class="interest" href="#">Places of Interest</a>
+            </li>
+            <li>
+              <a id="event" name="event" class="interest" href="#">Events</a>
+            </li>
+            <li>
+              <a id="rest" name="rest" class="interest" href="#">Restaurants</a>
+            </li>
+          </ul>
+        </div>
+        <div id="main-content" class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+          <div id="place-content" class="my-display">
+            <h2>Places of Interest</h2>
+            <p>{{city}}</p>
+            <!--<ul>-->
+            <!--%for interest in interest:-->
+            <!--<li>{{interest}}</li>-->
+            <!--%end-->
+            <!--</ul>-->
+            <p>{{interest}}</p>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          </div>
+          <div id="event-content" class="my-hide">
+            <h2>Events</h2>
+            <p>This is Events section. When toggled using the button below, the menu will
+              appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle-1">Toggle Menu</a>
+          </div>
+          <div id="rest-content" class="my-hide">
+            <h2>Restaurants</h2>
+            <p>This is Restaurants section. When toggled using the button below, the menu will
+              appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle-2">Toggle Menu</a>
+          </div>
+        </div>
+      </div>
+    
+    
+    </div>
+  </div>
+  
+  
+  <footer>
+    <footer class="text-center">
+      <p>Created by: Sangeeta Joshi, Kavya Suresh Babu, Ligang Ye, Mahima Ganapati, and Madhura Bhat.</p>
+    </footer>
+  </footer>
+</div>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- bootstrap.min.js -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<!-- customized js-->
+<script src="../static/main.js"></script>
+</body>
+
+</html>
